@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="shortcut icon" href="coin-us-dollar-icon.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        caption {
+            text-align: left;
+            padding: 8px;
+            font-weight: bolder;
+            font-size: 1.5em;
+        }
+
+        tfoot th, tbody th {
+            background-color: rgb(244, 237, 237);
+        }
+
+        thead th {
+            background-color: rgb(195, 190, 190);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Numeros da sorte</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Impar / Par</th>
+                <th scope="col">Nome</th>
+                <th scope="col" colspan="3">Numeros</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Impar</th>
+                <td>Anthony</td>
+                <td>1</td>
+                <td>3</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Priscila</td>
+                <td>3</td>
+                <td>5</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Edilson</td>
+                <td>5</td>
+                <td>7</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Par</th>
+                <td>Miller</td>
+                <td>2</td>
+                <td>4</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Tata</td>
+                <td>4</td>
+                <td>8</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Rute</td>
+                <td>6</td>
+                <td>8</td>
+                <td>10</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Total</th>
+                <td colspan="3">103</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
